@@ -62,7 +62,7 @@
     <variable name="outputVariable" messageType="client:BPELAuthTokenResponseMessage"/>
     <variable name="AuthTokenOutputVar" bpelx:json="string"/>
     <variable name="AuthTokenInvoke_ReqTokenPass_InputVariable" messageType="ns3:ReqTokenPass_inputMessage"/>
-    <variable name="AuthTokenInvoke_ReqTokenPass_OutputVariable" messageType="ns3:Rest_EmptyMessage"/>
+    <variable name="AuthTokenInvoke_ReqTokenPass_OutputVariable" messageType="ns3:ReqTokenPass_outputMessage"/>
   </variables>
 
   <!-- 
@@ -105,6 +105,44 @@
     <invoke name="AuthTokenInvoke" partnerLink="AuthToken" portType="ns3:AuthToken_ptt"
             operation="ReqTokenPass" inputVariable="AuthTokenInvoke_ReqTokenPass_InputVariable" outputVariable="AuthTokenInvoke_ReqTokenPass_OutputVariable"
             bpelx:invokeAsDetail="no"/>
+    <assign name="InvokeOutputAssign">
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:token_type</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:token_type</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:scope</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:scope</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:expires_in</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:expires_in</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:ext_expires_in</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:ext_expires_in</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:expires_on</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:expires_on</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:not_before</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:not_before</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:resource</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:resource</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:access_token</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:access_token</to>
+      </copy>
+      <copy>
+        <from>$AuthTokenInvoke_ReqTokenPass_OutputVariable.reply/ns1:refresh_token</from>
+        <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/ns1:refresh_token</to>
+      </copy>
+    </assign>
     <!-- Generate reply to synchronous request -->
     <reply name="replyOutput" partnerLink="bpelauthtoken_client" portType="client:BPELAuthToken" operation="process" variable="outputVariable"/>
   </sequence>

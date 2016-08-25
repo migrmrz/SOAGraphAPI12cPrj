@@ -17,7 +17,9 @@
             <request>
                <representation mediaType="application/x-www-form-urlencoded" element="cns:authTokenRequest" xmlns:cns="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"/>
             </request>
-            <response status="204"/>
+            <response status="200">
+               <representation mediaType="application/json" element="cns:authTokenResponse" xmlns:cns="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"/>
+            </response>
          </method>
       </resource>
    </resources>
