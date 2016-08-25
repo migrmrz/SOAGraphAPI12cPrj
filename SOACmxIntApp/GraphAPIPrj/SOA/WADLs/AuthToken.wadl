@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns0="http://www.spsolutions.com.mx/demo/graphapi/schemas/token" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="AuthToken">RestReference</doc>
+   <grammars>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/token" schemaLocation="../Schemas/AuthToken.xsd"/>
+        </xsd:schema>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/AuthToken" elementFormDefault="qualified">
+            <element name="empty">
+                <complexType/>
+            </element>
+        </schema>
+   </grammars>
+   <resources>
+      <resource path="/spsolutions.com.mx/oauth2/token">
+         <method name="POST" soa:wsdlOperation="ReqTokenPass">
+            <request>
+               <representation mediaType="application/x-www-form-urlencoded" element="cns:authTokenRequest" xmlns:cns="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"/>
+            </request>
+            <response status="204"/>
+         </method>
+      </resource>
+   </resources>
+</application>
