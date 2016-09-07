@@ -4,10 +4,10 @@
    <annotationfile/>
    <iconize/>
    <partnerlink_locations>
-      <partnerlink name="bpelauthtoken_client" x="0" y="289" side="left"/>
-      <partnerlink name="AuthToken" x="727" y="290" side="right"/>
+      <partnerlink name="bpelauthtoken_client" x="0" y="235" side="left"/>
+      <partnerlink name="AuthToken" x="1054" y="284" side="right"/>
    </partnerlink_locations>
-   <graph_layout viewport="0,230,849,410" show_swimlanes="true">
+   <graph_layout viewport="0,0,1170,601" show_swimlanes="true">
       <layout_item collapsed="false" xpath="/process" type="process" showhandlers="true"/>
       <layout_item collapsed="false" xpath="/process/sequence" type="sequence"/>
    </graph_layout>

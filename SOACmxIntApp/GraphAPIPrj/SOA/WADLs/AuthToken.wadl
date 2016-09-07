@@ -3,7 +3,8 @@
    <doc title="AuthToken">RestReference</doc>
    <grammars>
       <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-            <xsd:import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/token" schemaLocation="../Schemas/AuthToken.xsd"/>
+            <xsd:import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"
+                        schemaLocation="../Schemas/GraphAPI_ELEMENTS.xsd"/>
         </xsd:schema>
       <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/AuthToken" elementFormDefault="qualified">
             <element name="empty">
@@ -17,9 +18,7 @@
             <request>
                <representation mediaType="application/x-www-form-urlencoded" element="cns:authTokenRequest" xmlns:cns="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"/>
             </request>
-            <response status="200">
-               <representation mediaType="application/json" element="cns:authTokenResponse" xmlns:cns="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"/>
-            </response>
+            <response status="204"/>
          </method>
       </resource>
    </resources>

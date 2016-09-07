@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:type="http://www.spsolutions.com.mx/demo/graphapi/schemas/types"
+            targetNamespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/types" elementFormDefault="qualified">
+  <xsd:complexType name="AuthTokenRequestType">
+    <xsd:sequence>
+      <xsd:element name="grant_type" type="xsd:string"/>
+      <xsd:element name="redirect_uri" type="xsd:string"/>
+      <xsd:element name="client_id" type="xsd:string"/>
+      <xsd:element name="resource" type="xsd:string"/>
+      <xsd:element name="username" type="xsd:string"/>
+      <xsd:element name="password" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AuthTokenResponseType">
+    <xsd:sequence>
+      <xsd:element name="token_type" type="xsd:string"/>
+      <xsd:element name="scope" type="xsd:string"/>
+      <xsd:element name="expires_in" type="xsd:string"/>
+      <xsd:element name="ext_expires_in" type="xsd:string"/>
+      <xsd:element name="expires_on" type="xsd:string"/>
+      <xsd:element name="not_before" type="xsd:string"/>
+      <xsd:element name="resource" type="xsd:string"/>
+      <xsd:element name="access_token" type="xsd:string"/>
+      <xsd:element name="refresh_token" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CheckMemberGroupRequestType">
+    <xsd:sequence>
+      <xsd:element name="user" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CheckMemberGroupResponseType">
+    <xsd:sequence/>
+  </xsd:complexType>
+</xsd:schema>

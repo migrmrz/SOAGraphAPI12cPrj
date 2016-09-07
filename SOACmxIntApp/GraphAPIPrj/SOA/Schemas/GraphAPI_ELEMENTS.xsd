@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:type="http://www.spsolutions.com.mx/demo/graphapi/schemas/types"
+            xmlns:element="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"
+            targetNamespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/elements"
+            elementFormDefault="qualified">
+  <xsd:import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/types"
+              schemaLocation="GraphAPI_TYPES.xsd"/>
+  <xsd:element name="authTokenRequest" type="type:AuthTokenRequestType"/>
+  <xsd:element name="authTokenResponse" type="type:AuthTokenResponseType"/>
+  <xsd:element name="checkGroupMemberRequest" type="type:CheckMemberGroupRequestType"/>
+</xsd:schema>

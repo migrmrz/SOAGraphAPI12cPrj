@@ -1,0 +1,31 @@
+<?xml version= '1.0' encoding= 'UTF-8' ?>
+<wsdl:definitions
+     name="RestReference"
+     targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference"
+     xmlns:tns="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference"
+     xmlns:inp1="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference"
+     xmlns:inp2="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference"
+     xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    >
+    <plnk:partnerLinkType name="RestReference">
+        <plnk:role name="RestReferenceProvider" portType="tns:RestReference_ptt"/>
+    </plnk:partnerLinkType>
+    <wsdl:types>
+        <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference"
+             elementFormDefault="qualified">
+            <element name="empty">
+                <complexType/>
+            </element>
+        </schema>
+    </wsdl:types>
+    <wsdl:message name="Rest_EmptyMessage">
+        <wsdl:part name="Empty" element="tns:empty"/>
+    </wsdl:message>
+    <wsdl:portType name="RestReference_ptt">
+        <wsdl:operation name="checkMemeberGroups">
+            <wsdl:input message="tns:Rest_EmptyMessage"/>
+            <wsdl:output message="tns:Rest_EmptyMessage"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

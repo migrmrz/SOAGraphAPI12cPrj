@@ -15,6 +15,8 @@
           importType="wsdl"/>
   <import namespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/AuthToken" location="WSDLs/AuthToken.wsdl"
           importType="wsdl"/>
+  <import namespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference" location="WSDLs/RestReference.wsdl"
+          importType="wsdl"/>
   <service name="bpelauthtoken_client_ep" ui:wsdlLocation="WSDLs/BPELAuthToken.wsdl">
     <interface.wsdl interface="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/BPELAuthToken#wsdl.interface(BPELAuthToken)"/>
     <binding.ws port="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/BPELAuthToken#wsdl.endpoint(bpelauthtoken_client_ep/BPELAuthToken_pt)"/>
@@ -38,6 +40,10 @@
     <binding.rest config="WADLs/AuthToken.wadl" location="https://login.microsoftonline.com">
       <property name="reorderJsonAsPerXmlSchema" type="xs:boolean" many="false" override="may">true</property>
     </binding.rest>
+  </reference>
+  <reference name="RestReference" ui:wsdlLocation="WSDLs/RestReference.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference#wsdl.interface(RestReference_ptt)"/>
+    <binding.rest config="WADLs/RestReference.wadl" location="https://graph.windows.net/spsolutions.com.mx/users"/>
   </reference>
   <wire>
     <source.uri>bpelauthtoken_client_ep</source.uri>

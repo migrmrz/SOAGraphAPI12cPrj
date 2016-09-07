@@ -1,2 +1,323 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Faults/>
+<Faults>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</name>
+      <fix/>
+      <msg>Error loading schema from file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl [Cause=mistmatch for targetNamespace between http://www.spsolutions.com.mx/demo/graphapi/schemas/token and http://www.spsolutions.com.mx/demo/graphapi/schemas/elements for import]</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://www.spsolutions.com.mx/demo/graphapi/schemas/token}authTokenRequest</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl</name>
+      <fix/>
+      <msg>Message part "payload" is undefined [element = {http://www.spsolutions.com.mx/demo/graphapi/schemas/token}authTokenResponse</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/AuthToken.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/AuthToken.wsdl</name>
+      <fix/>
+      <msg>Message part "request" is undefined [element = {http://www.spsolutions.com.mx/demo/graphapi/schemas/token}authTokenRequest</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/AuthToken.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/AuthToken.wsdl</name>
+      <fix/>
+      <msg>Message part "Empty" is undefined [element = {http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/AuthToken}empty</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/RestReference.wsdl</file>
+      <name>/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/RestReference.wsdl</name>
+      <fix/>
+      <msg>Message part "Empty" is undefined [element = {http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference}empty</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/ns:composite/ns:reference[@name='RestReference']</loc>
+      <line>44</line>
+      <col>78</col>
+      <file>C:\JDeveloper\mywork\SOACmxIntApp\GraphAPIPrj\SOA\composite.xml</file>
+      <name>C:\JDeveloper\mywork\SOACmxIntApp\GraphAPIPrj\SOA\composite.xml</name>
+      <fix/>
+      <msg>Reference RestReference does not exist as wire target</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']</loc>
+      <line>32</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Please check import location or element QNames.</fix>
+      <msg>Error loading schema from file:/C:/JDeveloper/mywork/SOACmxIntApp/GraphAPIPrj/SOA/WSDLs/BPELAuthToken.wsdl [Cause=mistmatch for targetNamespace between http://www.spsolutions.com.mx/demo/graphapi/schemas/token and http://www.spsolutions.com.mx/demo/graphapi/schemas/elements for import]</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][1]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>80</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][1]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>80</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:grant_type" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][1]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>81</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][1]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>81</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:grant_type" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][2]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>84</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][2]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>84</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:redirect_uri" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][2]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>85</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][2]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>85</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:redirect_uri" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][3]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>88</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][3]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>88</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:client_id" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][3]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>89</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][3]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>89</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:client_id" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][4]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>92</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][4]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>92</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:resource" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][4]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>93</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][4]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>93</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:resource" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][5]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>96</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][5]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>96</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:username" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][5]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>97</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][5]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>97</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:username" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][6]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>100</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "inputVariable" does not have a part named "payload" - check expression segment "$inputVariable.payload"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][6]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='from']</loc>
+      <line>100</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:password" cannot be resolved.</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][6]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>101</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix/>
+      <msg>Variable "AuthTokenInvoke_ReqTokenPass_InputVariable" does not have a part named "request" - check expression segment "$AuthTokenInvoke_ReqTokenPass_InputVariable.request"</msg>
+   </Fault>
+   <Fault>
+      <severity>error</severity>
+      <loc>/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='process']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='sequence'][@name='main']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='assign'][@name='InvokeParamsAssign']/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='copy'][6]/*[namespace-uri()='http://docs.oasis-open.org/wsbpel/2.0/process/executable'][local-name()='to']</loc>
+      <line>101</line>
+      <col/>
+      <file>BPEL/BPELAuthToken.bpel</file>
+      <name>BPEL/BPELAuthToken.bpel</name>
+      <fix>Check the type definition associated with the BPEL variable.</fix>
+      <msg>The XPath segment "child::ns1:password" cannot be resolved.</msg>
+   </Fault>
+</Faults>

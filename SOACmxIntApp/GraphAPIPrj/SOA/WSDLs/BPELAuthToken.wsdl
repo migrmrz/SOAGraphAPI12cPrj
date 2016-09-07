@@ -3,7 +3,7 @@
              targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/BPELAuthToken"
              xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
              xmlns:client="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/BPELAuthToken"
-             xmlns:ns1="http://www.spsolutions.com.mx/demo/graphapi/schemas/token"
+             xmlns:element="http://www.spsolutions.com.mx/demo/graphapi/schemas/elements"
              xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype">
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,7 +14,8 @@
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->   
 	<wsdl:types>
 		<schema xmlns="http://www.w3.org/2001/XMLSchema">
-			<import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/token" schemaLocation="../Schemas/AuthToken.xsd" />
+			<import namespace="http://www.spsolutions.com.mx/demo/graphapi/schemas/elements"
+           schemaLocation="../Schemas/GraphAPI_ELEMENTS.xsd" />
 		</schema>
 	</wsdl:types>
 
@@ -23,10 +24,10 @@
 	part of the port type defintions
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->      
 	<wsdl:message name="BPELAuthTokenRequestMessage">
-		<wsdl:part name="payload" element="ns1:authTokenRequest" />
+		<wsdl:part name="payload" element="element:authTokenRequest" />
 	</wsdl:message>
 	<wsdl:message name="BPELAuthTokenResponseMessage">
-		<wsdl:part name="payload" element="ns1:authTokenResponse" />
+		<wsdl:part name="payload" element="element:authTokenResponse" />
 	</wsdl:message>
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

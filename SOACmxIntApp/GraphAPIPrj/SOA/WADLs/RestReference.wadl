@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="RestReference">RestReference</doc>
+   <grammars>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/SOACmxIntApp/GraphAPIPrj/RestReference" elementFormDefault="qualified">
+            <element name="empty">
+                <complexType/>
+            </element>
+        </schema>
+   </grammars>
+   <resources>
+      <resource path="/$user/checkMemberGroups?api-version=1.6">
+         <method name="POST" soa:wsdlOperation="checkMemeberGroups">
+            <request/>
+            <response status="204"/>
+         </method>
+      </resource>
+   </resources>
+</application>
